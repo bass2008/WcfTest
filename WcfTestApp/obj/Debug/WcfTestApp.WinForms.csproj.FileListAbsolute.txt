@@ -1,0 +1,13 @@
+c:\users\сергей\documents\visual studio 2012\Projects\WcfTestApp\WcfTestApp\obj\Debug\WcfTestApp.WinForms.csproj.GenerateResource.Cache
+c:\users\сергей\documents\visual studio 2012\Projects\WcfTestApp\WcfTestApp\bin\Debug\WcfTestApp.WinForms.exe.config
+C:\Users\Сергей\documents\visual studio 2012\Projects\WcfTestApp\WcfTestApp\bin\Debug\WcfTestApp.WinForms.exe
+C:\Users\Сергей\documents\visual studio 2012\Projects\WcfTestApp\WcfTestApp\bin\Debug\WcfTestApp.WinForms.pdb
+C:\Users\Сергей\documents\visual studio 2012\Projects\WcfTestApp\WcfTestApp\bin\Debug\WcfTestApp.DAL.dll
+C:\Users\Сергей\documents\visual studio 2012\Projects\WcfTestApp\WcfTestApp\bin\Debug\EntityFramework.dll
+C:\Users\Сергей\documents\visual studio 2012\Projects\WcfTestApp\WcfTestApp\bin\Debug\WcfTestApp.DAL.pdb
+C:\Users\Сергей\documents\visual studio 2012\Projects\WcfTestApp\WcfTestApp\bin\Debug\EntityFramework.xml
+C:\Users\Сергей\documents\visual studio 2012\Projects\WcfTestApp\WcfTestApp\obj\Debug\WcfTestApp.WinForms.csprojResolveAssemblyReference.cache
+C:\Users\Сергей\documents\visual studio 2012\Projects\WcfTestApp\WcfTestApp\obj\Debug\WcfTestApp.WinForms.Form1.resources
+C:\Users\Сергей\documents\visual studio 2012\Projects\WcfTestApp\WcfTestApp\obj\Debug\WcfTestApp.WinForms.Properties.Resources.resources
+C:\Users\Сергей\documents\visual studio 2012\Projects\WcfTestApp\WcfTestApp\obj\Debug\WcfTestApp.WinForms.exe
+C:\Users\Сергей\documents\visual studio 2012\Projects\WcfTestApp\WcfTestApp\obj\Debug\WcfTestApp.WinForms.pdb

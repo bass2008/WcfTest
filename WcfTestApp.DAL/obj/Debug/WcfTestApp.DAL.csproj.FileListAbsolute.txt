@@ -1,0 +1,10 @@
+C:\Users\Сергей\documents\visual studio 2012\Projects\WcfTestApp\WcfTestApp.DAL\bin\Debug\WcfTestApp.DAL.dll.config
+C:\Users\Сергей\documents\visual studio 2012\Projects\WcfTestApp\WcfTestApp.DAL\bin\Debug\WcfTestApp.DAL.dll
+C:\Users\Сергей\documents\visual studio 2012\Projects\WcfTestApp\WcfTestApp.DAL\bin\Debug\WcfTestApp.DAL.pdb
+C:\Users\Сергей\documents\visual studio 2012\Projects\WcfTestApp\WcfTestApp.DAL\bin\Debug\EntityFramework.dll
+C:\Users\Сергей\documents\visual studio 2012\Projects\WcfTestApp\WcfTestApp.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Сергей\documents\visual studio 2012\Projects\WcfTestApp\WcfTestApp.DAL\bin\Debug\EntityFramework.xml
+C:\Users\Сергей\documents\visual studio 2012\Projects\WcfTestApp\WcfTestApp.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Сергей\documents\visual studio 2012\Projects\WcfTestApp\WcfTestApp.DAL\obj\Debug\WcfTestApp.DAL.csprojResolveAssemblyReference.cache
+C:\Users\Сергей\documents\visual studio 2012\Projects\WcfTestApp\WcfTestApp.DAL\obj\Debug\WcfTestApp.DAL.dll
+C:\Users\Сергей\documents\visual studio 2012\Projects\WcfTestApp\WcfTestApp.DAL\obj\Debug\WcfTestApp.DAL.pdb
