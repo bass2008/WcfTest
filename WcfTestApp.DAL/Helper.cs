@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WcfTestApp.DAL.Models;
 
 namespace WcfTestApp.DAL
 {
@@ -11,11 +12,11 @@ namespace WcfTestApp.DAL
         public string Start()
         {
             var res = "";
-            using (UserContext db = new UserContext())
+            using (var db = new ServiceContext())
             {
                 // создаем два объекта User
-                User user1 = new User { Name = "Tom", Age = 33 };
-                User user2 = new User { Name = "Sam", Age = 26 };
+                var user1 = new User { Name = "Tom" };
+                var user2 = new User { Name = "Sam" };
 
                 // добавляем их в бд
                 db.Users.Add(user1);
@@ -26,9 +27,9 @@ namespace WcfTestApp.DAL
                 // получаем объекты из бд и выводим на консоль
                 var users = db.Users;
                 res += "Список объектов: ";
-                foreach (User u in users)
+                foreach (var u in users)
                 {
-                    res += String.Format("{0}.{1} - {2} ", u.Id, u.Name, u.Age);
+                    res += String.Format("{0}:{1}", u.UserId, u.Name);
                 }
             }
             return res;
