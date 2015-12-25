@@ -51,6 +51,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Loger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -83,6 +84,10 @@
     <ProjectReference Include="..\WcfTestApp.DAL\WcfTestApp.DAL.csproj">
       <Project>{7118899a-27e8-45bf-bdb5-fd353a12cf9c}</Project>
       <Name>WcfTestApp.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WcfTestApp.Domain\WcfTestApp.Domain.csproj">
+      <Project>{7e05f9a2-f128-4b64-bb3e-e3a668d7afce}</Project>
+      <Name>WcfTestApp.Domain</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

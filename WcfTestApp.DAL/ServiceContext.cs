@@ -1,5 +1,5 @@
 ﻿using System.Data.Entity;
-using WcfTestApp.DAL.Models;
+using WcfTestApp.Domain.Models;
 
 namespace WcfTestApp.DAL
 {

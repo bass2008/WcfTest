@@ -3,15 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WcfTestApp.DAL.Models;
+using WcfTestApp.Domain.Interfaces;
+using WcfTestApp.Domain.Models;
 
 namespace WcfTestApp.DAL
 {
     public class Helper
     {
-        public string Start()
+        private ILoger _loger;
+
+        public Helper(ILoger loger)
         {
-            var res = "";
+            _loger = loger;
+        }
+
+        public void Start()
+        {
             using (var db = new ServiceContext())
             {
                 // создаем два объекта User
@@ -22,17 +29,16 @@ namespace WcfTestApp.DAL
                 db.Users.Add(user1);
                 db.Users.Add(user2);
                 db.SaveChanges();
-                res += "Объекты успешно сохранены ";
+                _loger.Write("Объекты успешно сохранены ");
 
                 // получаем объекты из бд и выводим на консоль
                 var users = db.Users;
-                res += "Список объектов: ";
+                _loger.Write("Список объектов: ");
                 foreach (var u in users)
                 {
-                    res += String.Format("{0}:{1}", u.UserId, u.Name);
+                    _loger.Write(String.Format("{0}:{1}", u.UserId, u.Name));
                 }
             }
-            return res;
         }
     }
 }

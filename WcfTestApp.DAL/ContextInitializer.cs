@@ -4,7 +4,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WcfTestApp.DAL.Models;
+using WcfTestApp.Domain.Models;
 
 namespace WcfTestApp.DAL
 {
