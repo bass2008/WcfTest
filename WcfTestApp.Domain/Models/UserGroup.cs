@@ -1,17 +1,13 @@
 ﻿using System.Collections.Generic;
+using WcfTestApp.Domain.DataAccess;
 
 namespace WcfTestApp.Domain.Models
 {
     /// <summary>
     /// Группа пользователей.
     /// </summary>
-    public class UserGroup
+    public class UserGroup : DbElementBase
     {
-        /// <summary>
-        /// Id группы пользователей.
-        /// </summary>
-        public int UserGroupId { get; set; }
-
         /// <summary>
         /// Имя группы пользователей.
         /// </summary>

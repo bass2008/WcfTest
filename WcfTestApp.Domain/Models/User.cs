@@ -1,15 +1,12 @@
-﻿namespace WcfTestApp.Domain.Models
+﻿using WcfTestApp.Domain.DataAccess;
+
+namespace WcfTestApp.Domain.Models
 {
     /// <summary>
     /// Пользователь.
     /// </summary>
-    public class User
+    public class User : DbElementBase
     {
-        /// <summary>
-        /// Id пользователя.
-        /// </summary>
-        public int UserId { get; set; }
-
         /// <summary>
         /// Имя пользователя.
         /// </summary>

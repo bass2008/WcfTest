@@ -29,7 +29,8 @@ namespace WcfTestApp.WinForms
         private void button1_Click(object sender, EventArgs e)
         {
             var helper = new Helper(_loger);
-            helper.Start();
+            //helper.Start();
+            helper.StartRepository();
             MessageBox.Show("ok");
         }
     }

@@ -1,15 +1,12 @@
-﻿namespace WcfTestApp.Domain.Models
+﻿using WcfTestApp.Domain.DataAccess;
+
+namespace WcfTestApp.Domain.Models
 {
     /// <summary>
     /// Событие.
     /// </summary>
-    public class Event
+    public class Event : DbElementBase
     {
-        /// <summary>
-        /// Id события.
-        /// </summary>
-        public int EventId { get; set; }
-
         /// <summary>
         /// Имя события.
         /// </summary>

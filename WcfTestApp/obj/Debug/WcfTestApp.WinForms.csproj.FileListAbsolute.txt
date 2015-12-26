@@ -39,3 +39,5 @@ C:\Users\sborodaenko\Desktop\WcfTest\WcfTestApp\bin\Debug\WcfTestApp.Domain.pdb
 C:\Users\sborodaenko\Desktop\WcfTest\WcfTestApp\bin\Debug\EntityFramework.xml
 C:\Users\sborodaenko\Desktop\WcfTest\WcfTestApp\obj\Debug\WcfTestApp.WinForms.exe
 C:\Users\sborodaenko\Desktop\WcfTest\WcfTestApp\obj\Debug\WcfTestApp.WinForms.pdb
+C:\Users\Сергей\Desktop\WcfTest\WcfTestApp\bin\Debug\WcfTestApp.Domain.dll
+C:\Users\Сергей\Desktop\WcfTest\WcfTestApp\bin\Debug\WcfTestApp.Domain.pdb

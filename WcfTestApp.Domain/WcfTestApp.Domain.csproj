@@ -40,6 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccess\DbElementBase.cs" />
+    <Compile Include="DataAccess\IRepository.cs" />
+    <Compile Include="DataAccess\IUnitOfWork.cs" />
     <Compile Include="Interfaces\ILoger.cs" />
     <Compile Include="Models\Channel.cs" />
     <Compile Include="Models\Event.cs" />

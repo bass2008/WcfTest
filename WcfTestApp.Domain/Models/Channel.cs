@@ -1,17 +1,13 @@
 ﻿using System.Collections.Generic;
+using WcfTestApp.Domain.DataAccess;
 
 namespace WcfTestApp.Domain.Models
 {
     /// <summary>
     /// Канал связи.
     /// </summary>
-    public class Channel
+    public class Channel : DbElementBase
     {
-        /// <summary>
-        /// Id события.
-        /// </summary>
-        public int ChannelId { get; set; }
-
         /// <summary>
         /// Имя события.
         /// </summary>

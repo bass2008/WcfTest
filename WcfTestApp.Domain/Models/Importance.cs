@@ -1,17 +1,13 @@
 ﻿using System.Collections.Generic;
+using WcfTestApp.Domain.DataAccess;
 
 namespace WcfTestApp.Domain.Models
 {
     /// <summary>
     /// Категория важности.
     /// </summary>
-    public class Importance
+    public class Importance : DbElementBase
     {
-        /// <summary>
-        /// Id категории важности.
-        /// </summary>
-        public int ImportanceId { get; set; }
-
         /// <summary>
         /// Имя категории важности.
         /// </summary>
