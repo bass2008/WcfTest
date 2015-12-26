@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
-using WcfTestApp.Domain.Interfaces;
+﻿using WcfTestApp.Domain.Interfaces;
 using System.Windows.Forms;
 
 namespace WcfTestApp.WinForms

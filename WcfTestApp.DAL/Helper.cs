@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using WcfTestApp.DAL.DataAccess;
 using WcfTestApp.Domain.DataAccess;
 using WcfTestApp.Domain.Interfaces;

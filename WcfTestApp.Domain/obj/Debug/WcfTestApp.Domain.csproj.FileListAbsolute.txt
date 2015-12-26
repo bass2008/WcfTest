@@ -5,6 +5,6 @@ C:\Users\sborodaenko\Desktop\WcfTest\WcfTestApp.Domain\obj\Debug\WcfTestApp.Doma
 C:\Users\sborodaenko\Desktop\WcfTest\WcfTestApp.Domain\obj\Debug\WcfTestApp.Domain.csprojResolveAssemblyReference.cache
 C:\Users\Сергей\Desktop\WcfTest\WcfTestApp.Domain\bin\Debug\WcfTestApp.Domain.dll
 C:\Users\Сергей\Desktop\WcfTest\WcfTestApp.Domain\bin\Debug\WcfTestApp.Domain.pdb
-C:\Users\Сергей\Desktop\WcfTest\WcfTestApp.Domain\obj\Debug\WcfTestApp.Domain.csprojResolveAssemblyReference.cache
 C:\Users\Сергей\Desktop\WcfTest\WcfTestApp.Domain\obj\Debug\WcfTestApp.Domain.dll
 C:\Users\Сергей\Desktop\WcfTest\WcfTestApp.Domain\obj\Debug\WcfTestApp.Domain.pdb
+C:\Users\Сергей\Desktop\WcfTest\WcfTestApp.Domain\obj\Debug\WcfTestApp.Domain.csprojResolveAssemblyReference.cache

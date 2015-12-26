@@ -41,20 +41,8 @@ namespace WcfTestApp.WinForms
                 var channel = cf.CreateChannel();
 
                 _loger.Write("Calling EchoWithGet via HTTP GET: ");
-                var s = channel.EchoWithGet("Hello, world");
+                var s = channel.ThrowNotice("middle", "php", "fatal error");
                 _loger.Write(string.Format("   Output: {0}", s));
-
-                _loger.Write("");
-                _loger.Write("This can also be accomplished by navigating to");
-                _loger.Write("http://localhost:8000/EchoWithGet?s=Hello, world!");
-                _loger.Write("in a web browser while this sample is running.");
-
-                _loger.Write("");
-
-                _loger.Write("Calling EchoWithPost via HTTP POST: ");
-                s = channel.EchoWithPost("Hello, world");
-                _loger.Write(string.Format("   Output: {0}", s));
-                _loger.Write("");
             }
 
             _loger.Write("Done!");

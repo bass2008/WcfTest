@@ -30,3 +30,5 @@ C:\Users\sborodaenko\Desktop\WcfTest\WcfTestApp.DAL\obj\Debug\WcfTestApp.DAL.dll
 C:\Users\sborodaenko\Desktop\WcfTest\WcfTestApp.DAL\obj\Debug\WcfTestApp.DAL.pdb
 C:\Users\Сергей\Desktop\WcfTest\WcfTestApp.DAL\bin\Debug\WcfTestApp.Domain.dll
 C:\Users\Сергей\Desktop\WcfTest\WcfTestApp.DAL\bin\Debug\WcfTestApp.Domain.pdb
+C:\Users\Сергей\Desktop\WcfTest\WcfTestApp.DAL\obj\Debug\WcfTestApp.DAL.DevStrings.resources
+C:\Users\Сергей\Desktop\WcfTest\WcfTestApp.DAL\obj\Debug\WcfTestApp.DAL.csproj.GenerateResource.Cache

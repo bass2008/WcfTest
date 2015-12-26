@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data.Entity;
 using WcfTestApp.Domain.Models;
 
 namespace WcfTestApp.DAL
@@ -12,8 +7,8 @@ namespace WcfTestApp.DAL
     {
         protected override void Seed(ServiceContext db)
         {
-            var user1 = new User { Name = "Иванов И." };
-            var user2 = new User { Name = "Петров П." };
+            var user1 = new User { Name = "Иванов И.", Email = "ya@ya.ru" };
+            var user2 = new User { Name = "Петров П.", Email = "g@g.com" };
 
             var event1 = new Event { Name = "php" };
             var event2 = new Event { Name = "csharp" };

@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data.Entity;
-using System.Data.Entity.Validation;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using WcfTestApp.Domain.DataAccess;
 
 namespace WcfTestApp.DAL.DataAccess
@@ -40,6 +35,9 @@ namespace WcfTestApp.DAL.DataAccess
             catch (Exception ex)
             {
                 // Запись в лог.
+                var loger = new FileLoger(DevStrings.FileLogerPath);
+                loger.Write(ex.Message);
+                throw ex;
             }
 
         }

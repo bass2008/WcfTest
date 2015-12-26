@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using WcfTestApp.Domain.DataAccess;
 
 namespace WcfTestApp.Domain.Models
@@ -21,6 +20,11 @@ namespace WcfTestApp.Domain.Models
         /// Имя пользователя.
         /// </summary>
         public string Name { get; set; }
+
+        /// <summary>
+        /// E-mail пользователя.
+        /// </summary>
+        public string Email { get; set; }
 
         /// <summary>
         /// Подписки на события текущего пользователя.

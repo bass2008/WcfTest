@@ -8,10 +8,6 @@ namespace WcfTestApp.Domain.Interfaces
     {
         [OperationContract]
         [WebGet]
-        string EchoWithGet(string s);
-
-        [OperationContract]
-        [WebInvoke]
-        string EchoWithPost(string s);
+        string ThrowNotice(string impotance, string eventName, string message);
     }
 }
