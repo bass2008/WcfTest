@@ -1,0 +1,8 @@
+C:\Users\Сергей\Desktop\WcfTest\WcfTestApp.WcfService\bin\Debug\WcfTestApp.WcfService.exe.config
+C:\Users\Сергей\Desktop\WcfTest\WcfTestApp.WcfService\bin\Debug\WcfTestApp.WcfService.exe
+C:\Users\Сергей\Desktop\WcfTest\WcfTestApp.WcfService\bin\Debug\WcfTestApp.WcfService.pdb
+C:\Users\Сергей\Desktop\WcfTest\WcfTestApp.WcfService\obj\Debug\WcfTestApp.WcfService.csprojResolveAssemblyReference.cache
+C:\Users\Сергей\Desktop\WcfTest\WcfTestApp.WcfService\obj\Debug\WcfTestApp.WcfService.exe
+C:\Users\Сергей\Desktop\WcfTest\WcfTestApp.WcfService\obj\Debug\WcfTestApp.WcfService.pdb
+C:\Users\Сергей\Desktop\WcfTest\WcfTestApp.WcfService\bin\Debug\WcfTestApp.Domain.dll
+C:\Users\Сергей\Desktop\WcfTest\WcfTestApp.WcfService\bin\Debug\WcfTestApp.Domain.pdb

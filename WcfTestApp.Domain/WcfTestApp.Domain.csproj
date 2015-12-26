@@ -31,19 +31,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccess\DbElementBase.cs" />
     <Compile Include="DataAccess\IRepository.cs" />
     <Compile Include="DataAccess\IUnitOfWork.cs" />
     <Compile Include="Interfaces\ILoger.cs" />
+    <Compile Include="Interfaces\IService.cs" />
     <Compile Include="Models\Channel.cs" />
     <Compile Include="Models\Event.cs" />
     <Compile Include="Models\Importance.cs" />

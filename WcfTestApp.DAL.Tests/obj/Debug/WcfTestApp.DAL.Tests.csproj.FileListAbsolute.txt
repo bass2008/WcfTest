@@ -10,5 +10,3 @@ C:\Users\Сергей\Desktop\WcfTest\WcfTestApp.DAL.Tests\obj\Debug\WcfTestApp.
 C:\Users\Сергей\Desktop\WcfTest\WcfTestApp.DAL.Tests\obj\Debug\WcfTestApp.DAL.Tests.dll
 C:\Users\Сергей\Desktop\WcfTest\WcfTestApp.DAL.Tests\obj\Debug\WcfTestApp.DAL.Tests.pdb
 C:\Users\Сергей\Desktop\WcfTest\WcfTestApp.DAL.Tests\bin\Debug\WcfTestApp.DAL.Tests.dll.config
-C:\Users\Сергей\Desktop\WcfTest\WcfTestApp.DAL.Tests\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Сергей\Desktop\WcfTest\WcfTestApp.DAL.Tests\bin\Debug\EntityFramework.SqlServer.xml
