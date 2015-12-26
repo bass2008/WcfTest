@@ -17,5 +17,11 @@ namespace WcfTestApp.DAL
         }
 
         public DbSet<User> Users { get; set; }
+
+        public DbSet<Channel> Channels { get; set; }
+
+        public DbSet<Event> Events { get; set; }
+
+        public DbSet<Importance> Importances { get; set; }
     }
 }

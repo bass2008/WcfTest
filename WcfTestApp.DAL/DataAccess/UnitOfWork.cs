@@ -12,7 +12,7 @@ namespace WcfTestApp.DAL.DataAccess
     /// <summary>
     /// Реализация паттерна "Единица работы".
     /// </summary>
-    public class UnitOfWork : IUnitOfWork
+    public class UnitOfWork : IUnitOfWork, IDisposable
     {
         /// <summary>
         /// Контекст данных.
@@ -42,6 +42,19 @@ namespace WcfTestApp.DAL.DataAccess
                 // Запись в лог.
             }
 
+        }
+
+        /// <summary>
+        /// Очистить ресурсы.
+        /// </summary>
+        public void Dispose()
+        {
+            if (Context != null)
+            {
+                Context.Dispose();
+            }
+
+            GC.SuppressFinalize(this);
         }
     }
 }

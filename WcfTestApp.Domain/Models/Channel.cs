@@ -9,6 +9,14 @@ namespace WcfTestApp.Domain.Models
     public class Channel : DbElementBase
     {
         /// <summary>
+        /// Конструктор по умолчанию.
+        /// </summary>
+        public Channel()
+        {
+            Importances = new List<Importance>();
+        }
+
+        /// <summary>
         /// Имя события.
         /// </summary>
         public string Name { get; set; }

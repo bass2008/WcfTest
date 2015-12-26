@@ -9,6 +9,14 @@ namespace WcfTestApp.Domain.Models
     public class Importance : DbElementBase
     {
         /// <summary>
+        /// Конструктор по умолчанию.
+        /// </summary>
+        public Importance()
+        {
+            Channels = new List<Channel>();
+        }
+
+        /// <summary>
         /// Имя категории важности.
         /// </summary>
         public string Name { get; set; }
@@ -16,6 +24,6 @@ namespace WcfTestApp.Domain.Models
         /// <summary>
         /// События с данной категорией.
         /// </summary>
-        public virtual ICollection<Event> Events { get; set; }
+        public virtual ICollection<Channel> Channels { get; set; }
     }
 }

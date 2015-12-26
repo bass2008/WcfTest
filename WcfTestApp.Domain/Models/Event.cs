@@ -1,4 +1,5 @@
-﻿using WcfTestApp.Domain.DataAccess;
+﻿using System.Collections.Generic;
+using WcfTestApp.Domain.DataAccess;
 
 namespace WcfTestApp.Domain.Models
 {
@@ -11,5 +12,10 @@ namespace WcfTestApp.Domain.Models
         /// Имя события.
         /// </summary>
         public string Name { get; set; }
+
+        /// <summary>
+        /// Подписки на события текущего пользователя.
+        /// </summary>
+        public virtual ICollection<User> Users { get; set; }
     }
 }
