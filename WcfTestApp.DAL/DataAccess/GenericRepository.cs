@@ -123,16 +123,6 @@ namespace WcfTestApp.DAL.DataAccess
         }
 
         /// <summary>
-        /// Найти элемент.
-        /// </summary>
-        /// <param name="key">Ключ поиска.</param>
-        /// <returns>Найденый элемент.</returns>
-        public T Find(string key)
-        {
-            throw new NotImplementedException();
-        }
-
-        /// <summary>
         /// Получить набор элементов.
         /// </summary>
         /// <param name="where">Условые выборки.</param>

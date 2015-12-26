@@ -14,12 +14,8 @@ namespace WcfTestApp.Domain.DataAccess
         /// <summary>
         /// Получить элемент по идентификатору.
         /// </summary>
-        /// <param name="id">
-        /// Уникальный идентификатор элемента.
-        /// </param>
-        /// <returns>
-        /// Возвращает объект домена или null.
-        /// </returns>
+        /// <param name="id">Уникальный идентификатор элемента.</param>
+        /// <returns>Возвращает объект домена или null.</returns>
         T Get(int id);
 
         /// <summary>
@@ -50,9 +46,7 @@ namespace WcfTestApp.Domain.DataAccess
         /// <summary>
         /// Получить все элементы.
         /// </summary>
-        /// <returns>
-        /// Возвращает все объекты домена или null.
-        /// </returns>
+        /// <returns>Возвращает все объекты домена или null.</returns>
         T[] GetAll();
 
         /// <summary>
@@ -69,34 +63,18 @@ namespace WcfTestApp.Domain.DataAccess
         /// <param name="where">Условие выборки элементов.</param>
         /// <param name="include">Выражение для включения свойств.</param>
         /// <returns>Набор элементов.</returns>
-        T[] GetAll<TProperty>(
-            Expression<Func<T, bool>> where, Expression<Func<T, TProperty>>[] include);
-
-        /// <summary>
-        /// Искать элемент по ключу.
-        /// </summary>
-        /// <param name="key">
-        /// Параметр поиска.
-        /// </param>
-        /// <returns>
-        /// Возвращает искомый элемент или null.
-        /// </returns>
-        T Find(string key);
+        T[] GetAll<TProperty>(Expression<Func<T, bool>> where, Expression<Func<T, TProperty>>[] include);
 
         /// <summary>
         /// Добавить новый элемент.
         /// </summary>
-        /// <param name="item">
-        /// Новый элемент.
-        /// </param>
+        /// <param name="item">Новый элемент.</param>
         void Add(T item);
 
         /// <summary>
         /// Удалить элемент.
         /// </summary>
-        /// <param name="item">
-        /// Элемент, который необходимо удалить.
-        /// </param>
+        /// <param name="item">Элемент, который необходимо удалить.</param>
         void Delete(T item);
     }
 }

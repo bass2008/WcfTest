@@ -1,0 +1,14 @@
+C:\Users\Сергей\Desktop\WcfTest\WcfTestApp.DAL.Tests\bin\Debug\WcfTestApp.DAL.Tests.dll
+C:\Users\Сергей\Desktop\WcfTest\WcfTestApp.DAL.Tests\bin\Debug\WcfTestApp.DAL.Tests.pdb
+C:\Users\Сергей\Desktop\WcfTest\WcfTestApp.DAL.Tests\bin\Debug\WcfTestApp.DAL.dll
+C:\Users\Сергей\Desktop\WcfTest\WcfTestApp.DAL.Tests\bin\Debug\WcfTestApp.Domain.dll
+C:\Users\Сергей\Desktop\WcfTest\WcfTestApp.DAL.Tests\bin\Debug\EntityFramework.dll
+C:\Users\Сергей\Desktop\WcfTest\WcfTestApp.DAL.Tests\bin\Debug\WcfTestApp.DAL.pdb
+C:\Users\Сергей\Desktop\WcfTest\WcfTestApp.DAL.Tests\bin\Debug\WcfTestApp.Domain.pdb
+C:\Users\Сергей\Desktop\WcfTest\WcfTestApp.DAL.Tests\bin\Debug\EntityFramework.xml
+C:\Users\Сергей\Desktop\WcfTest\WcfTestApp.DAL.Tests\obj\Debug\WcfTestApp.DAL.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Сергей\Desktop\WcfTest\WcfTestApp.DAL.Tests\obj\Debug\WcfTestApp.DAL.Tests.dll
+C:\Users\Сергей\Desktop\WcfTest\WcfTestApp.DAL.Tests\obj\Debug\WcfTestApp.DAL.Tests.pdb
+C:\Users\Сергей\Desktop\WcfTest\WcfTestApp.DAL.Tests\bin\Debug\WcfTestApp.DAL.Tests.dll.config
+C:\Users\Сергей\Desktop\WcfTest\WcfTestApp.DAL.Tests\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Сергей\Desktop\WcfTest\WcfTestApp.DAL.Tests\bin\Debug\EntityFramework.SqlServer.xml

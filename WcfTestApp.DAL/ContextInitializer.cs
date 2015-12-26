@@ -12,8 +12,8 @@ namespace WcfTestApp.DAL
     {
         protected override void Seed(ServiceContext db)
         {
-            var user1 = new User { Name = "Samsung Galaxy S5" };
-            var user2 = new User { Name = "Nokia Lumia 630" };
+            var user1 = new User { Name = "Jonh" };
+            var user2 = new User { Name = "Bill" };
 
             db.Users.Add(user1);
             db.Users.Add(user2);

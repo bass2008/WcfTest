@@ -3,7 +3,7 @@ using WcfTestApp.Domain.Models;
 
 namespace WcfTestApp.DAL
 {
-    class ServiceContext : DbContext
+    public class ServiceContext : DbContext
     {
         static ServiceContext()
         {
