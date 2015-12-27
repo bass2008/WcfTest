@@ -61,29 +61,47 @@ namespace WcfTestApp.WcfService {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на C:\log.txt.
+        ///   Ищет локализованную строку, похожую на yourLogin@mail.ru.
         /// </summary>
-        internal static string FileLogerPath {
+        internal static string EmailSenderLogin {
             get {
-                return ResourceManager.GetString("FileLogerPath", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Wcf Notice Service.
-        /// </summary>
-        internal static string MailFrom {
-            get {
-                return ResourceManager.GetString("MailFrom", resourceCulture);
+                return ResourceManager.GetString("EmailSenderLogin", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Ищет локализованную строку, похожую на ATTENTION.
         /// </summary>
-        internal static string MailTheme {
+        internal static string EmailSenderMailTheme {
             get {
-                return ResourceManager.GetString("MailTheme", resourceCulture);
+                return ResourceManager.GetString("EmailSenderMailTheme", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на yourPass.
+        /// </summary>
+        internal static string EmailSenderPass {
+            get {
+                return ResourceManager.GetString("EmailSenderPass", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на smtp.mail.ru.
+        /// </summary>
+        internal static string EmailSenderServer {
+            get {
+                return ResourceManager.GetString("EmailSenderServer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на C:\log.txt.
+        /// </summary>
+        internal static string FileLogerPath {
+            get {
+                return ResourceManager.GetString("FileLogerPath", resourceCulture);
             }
         }
         

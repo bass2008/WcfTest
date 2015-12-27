@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net;
 using System.Net.Mail;
 using System.Security.Cryptography.X509Certificates;
 using WcfTestApp.DAL;
@@ -42,29 +43,30 @@ namespace WcfTestApp.WcfService
         /// <summary>
         /// Отправить сообщение на E-mail.
         /// </summary>
+        /// <param name="mailto">Получатель.</param>
         /// <param name="message">Сообщение.</param>
-        /// <param name="to">Получатель.</param>
-        public void Send(string message, string to)
+        public void Send(string mailto, string message)
         {
-            var from = StringResources.MailFrom;
-            
-            var mailMessage = new MailMessage(from, to)
-            {
-                Subject = StringResources.MailTheme,
-                Body = message
-            };
-
-            var client = new SmtpClient(_smtpServer);
-            client.UseDefaultCredentials = true;
-
             try
             {
-                client.Send(mailMessage);
+                var caption = StringResources.EmailSenderMailTheme;
+                MailMessage mail = new MailMessage();
+                mail.From = new MailAddress(_login);
+                mail.To.Add(new MailAddress(mailto));
+                mail.Subject = caption;
+                mail.Body = message;
+                SmtpClient client = new SmtpClient();
+                client.Host = _smtpServer;
+                client.Port = 587;
+                client.EnableSsl = true;
+                client.Credentials = new NetworkCredential(_login.Split('@')[0], _pass);
+                client.DeliveryMethod = SmtpDeliveryMethod.Network;
+                client.Send(mail);
+                mail.Dispose();
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                var loger = new FileLoger(StringResources.FileLogerPath);
-                loger.Write(ex.Message);
+                throw new Exception("Mail.Send: " + e.Message);
             }
         }
     }

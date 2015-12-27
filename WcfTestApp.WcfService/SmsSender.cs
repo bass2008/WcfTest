@@ -33,9 +33,9 @@ namespace WcfTestApp.WcfService
         /// <summary>
         /// Отправить смс в файл.
         /// </summary>
-        /// <param name="message">Сообщение.</param>
         /// <param name="to">Получатель.</param>
-        public void Send(string message, string to)
+        /// <param name="message">Сообщение.</param>
+        public void Send(string to, string message)
         {
             using (var sw = File.AppendText(_logFile))
             {

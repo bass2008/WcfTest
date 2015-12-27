@@ -64,12 +64,12 @@ namespace WcfTestApp.WcfService
                     switch (chan.Name)
                     {
                         case "E-mail":
-                            var emailSender = new EmailSender("smtp.mail.com", "login", "pass");
-                            emailSender.Send(message, user.Email);
+                            var emailSender = new EmailSender(StringResources.EmailSenderServer, StringResources.EmailSenderLogin, StringResources.EmailSenderPass);
+                            emailSender.Send(user.Email, message);
                             break;
                         case "SMS":
                             var smsSender = new SmsSender(StringResources.SmsLogerPath);
-                            smsSender.Send(message, user.Name);
+                            smsSender.Send(user.Name, message);
                             break;
                     }
                 }

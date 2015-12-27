@@ -41,7 +41,7 @@ namespace WcfTestApp.WinForms
                 var channel = cf.CreateChannel();
 
                 _loger.Write("Calling EchoWithGet via HTTP GET: ");
-                var s = channel.ThrowNotice("middle", "php", "fatal error");
+                var s = channel.ThrowNotice("Low", "php", "fatal error");
                 _loger.Write(string.Format("   Output: {0}", s));
             }
 

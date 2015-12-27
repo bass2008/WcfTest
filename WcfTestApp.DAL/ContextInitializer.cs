@@ -7,8 +7,8 @@ namespace WcfTestApp.DAL
     {
         protected override void Seed(ServiceContext db)
         {
-            var user1 = new User { Name = "Иванов И.", Email = "ya@ya.ru" };
-            var user2 = new User { Name = "Петров П.", Email = "g@g.com" };
+            var user1 = new User { Name = "Иванов И.", Email = "Zendor2008@mail.ru" };
+            var user2 = new User { Name = "Петров П.", Email = "Zendor2008@mail.ru" };
 
             var event1 = new Event { Name = "php" };
             var event2 = new Event { Name = "csharp" };

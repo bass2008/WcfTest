@@ -3,11 +3,10 @@
     public interface ISender
     {
         /// <summary>
-        /// Послать сообщение.
+        /// Отправить сообщение на E-mail.
         /// </summary>
-        /// <param name="message">Сообщение.</param>
         /// <param name="to">Получатель.</param>
-        /// <returns>Ответ.</returns>
-        void Send(string message, string to);
+        /// <param name="message">Сообщение.</param>
+        void Send(string to, string message);
     }
 }
