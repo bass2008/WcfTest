@@ -2,6 +2,7 @@
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using WcfTestApp.Domain.Interfaces;
+using WcfTestApp.WcfContracts;
 
 namespace WcfTestApp.WcfService
 {

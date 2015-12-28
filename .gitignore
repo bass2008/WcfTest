@@ -10,3 +10,5 @@
 /WcfTestApp.Domain/obj
 /WcfTestApp.WcfService/bin
 /WcfTestApp.WcfService/obj
+/WcfTestApp.WcfContracts/bin
+/WcfTestApp.WcfContracts/obj

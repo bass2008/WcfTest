@@ -7,7 +7,7 @@ namespace WcfTestApp.DAL
     /// <summary>
     /// Реализация файлового логера.
     /// </summary>
-    public class FileLoger : ILoger
+    public class FileLogger : ILogger
     {
         /// <summary>
         /// Путь для файла.
@@ -18,7 +18,7 @@ namespace WcfTestApp.DAL
         /// Конструктор по умолчанию.
         /// </summary>
         /// <param name="fullFileName"></param>
-        public FileLoger(string fullFileName)
+        public FileLogger(string fullFileName)
         {
             _logFile = fullFileName;
             if (!File.Exists(fullFileName))
@@ -45,3 +45,5 @@ namespace WcfTestApp.DAL
         }
     }
 }
+
+

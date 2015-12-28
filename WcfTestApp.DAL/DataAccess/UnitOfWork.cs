@@ -35,7 +35,7 @@ namespace WcfTestApp.DAL.DataAccess
             catch (Exception ex)
             {
                 // Запись в лог.
-                var loger = new FileLoger(DevStrings.FileLogerPath);
+                var loger = new FileLogger(DevStrings.FileLogerPath);
                 loger.Write(ex.Message);
                 throw ex;
             }

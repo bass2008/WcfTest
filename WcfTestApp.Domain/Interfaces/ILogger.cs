@@ -3,7 +3,7 @@
     /// <summary>
     /// Логер.
     /// </summary>
-    public interface ILoger
+    public interface ILogger
     {
         /// <summary>
         /// Запись в лог.

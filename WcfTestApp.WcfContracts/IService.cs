@@ -1,13 +1,13 @@
 ﻿using System.ServiceModel;
 using System.ServiceModel.Web;
 
-namespace WcfTestApp.Domain.Interfaces
+namespace WcfTestApp.WcfContracts
 {
     [ServiceContract]
     public interface IService
     {
         [OperationContract]
         [WebGet]
-        string ThrowNotice(string impotance, string eventName, string message);
+        string ThrowNotice(string importance, string eventName, string message);
     }
 }

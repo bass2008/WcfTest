@@ -4,6 +4,7 @@ using WcfTestApp.DAL;
 using WcfTestApp.DAL.DataAccess;
 using WcfTestApp.Domain.Interfaces;
 using WcfTestApp.Domain.Models;
+using WcfTestApp.WcfContracts;
 
 namespace WcfTestApp.WcfService
 {
@@ -15,24 +16,24 @@ namespace WcfTestApp.WcfService
         /// <summary>
         /// Логер.
         /// </summary>
-        private ILoger _loger;
+        private ILogger _loger;
 
         /// <summary>
         /// Конструктор по умолчанию.
         /// </summary>
         public Service()
         {
-            _loger = new FileLoger(StringResources.FileLogerPath);
+            _loger = new FileLogger(StringResources.FileLogerPath);
         }
 
         /// <summary>
         /// Сгенерировать уведомление.
         /// </summary>
-        /// <param name="impotance">Важность.</param>
+        /// <param name="importance">Важность.</param>
         /// <param name="eventName">Событие.</param>
         /// <param name="message">Сообщение.</param>
         /// <returns></returns>
-        public string ThrowNotice(string impotance, string eventName, string message)
+        public string ThrowNotice(string importance, string eventName, string message)
         {
             var context = new ServiceContext();
             var eventRepository = new GenericRepository<Event>(context);
@@ -45,7 +46,7 @@ namespace WcfTestApp.WcfService
             }
 
             var importanceRepository = new GenericRepository<Importance>(context);
-            var dbImportance = importanceRepository.Get(x => x.Name == impotance);
+            var dbImportance = importanceRepository.Get(x => x.Name == importance);
             if (dbImportance == null)
             {
                 var s = string.Format("Степень важности {0} не найдена", eventName);

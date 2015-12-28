@@ -6,7 +6,7 @@ namespace WcfTestApp.WinForms
     /// <summary>
     /// Реализация логера для формы.
     /// </summary>
-    public class Loger : ILoger
+    public class Loger : ILogger
     {
         /// <summary>
         /// Логер.

@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfTestApp.DAL.Tests", "Wcf
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfTestApp.WcfService", "WcfTestApp.WcfService\WcfTestApp.WcfService.csproj", "{0CCCF743-196E-4589-9A45-838FEFCE80BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfTestApp.WcfContracts", "WcfTestApp.WcfContracts\WcfTestApp.WcfContracts.csproj", "{D0C07C39-C6BD-48E8-9D01-75FB2FD3FE46}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{0CCCF743-196E-4589-9A45-838FEFCE80BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CCCF743-196E-4589-9A45-838FEFCE80BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CCCF743-196E-4589-9A45-838FEFCE80BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0C07C39-C6BD-48E8-9D01-75FB2FD3FE46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0C07C39-C6BD-48E8-9D01-75FB2FD3FE46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0C07C39-C6BD-48E8-9D01-75FB2FD3FE46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0C07C39-C6BD-48E8-9D01-75FB2FD3FE46}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

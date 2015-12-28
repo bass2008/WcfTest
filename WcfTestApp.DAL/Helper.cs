@@ -8,9 +8,9 @@ namespace WcfTestApp.DAL
 {
     public class Helper
     {
-        private ILoger _loger;
+        private ILogger _loger;
 
-        public Helper(ILoger loger)
+        public Helper(ILogger loger)
         {
             _loger = loger;
         }

@@ -4,6 +4,7 @@ using System.ServiceModel.Description;
 using System.Windows.Forms;
 using WcfTestApp.DAL;
 using WcfTestApp.Domain.Interfaces;
+using WcfTestApp.WcfContracts;
 
 namespace WcfTestApp.WinForms
 {
@@ -12,7 +13,7 @@ namespace WcfTestApp.WinForms
         /// <summary>
         /// Логер для формы.
         /// </summary>
-        private ILoger _loger;
+        private ILogger _loger;
 
         /// <summary>
         /// Конструктор по умолчанию.

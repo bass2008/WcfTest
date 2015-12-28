@@ -80,37 +80,6 @@ namespace WcfTestApp.DAL.DataAccess
         }
 
         /// <summary>
-        /// Получить элемент.
-        /// </summary>
-        /// <typeparam name="TProperty">Свойство элемента.</typeparam>
-        /// <param name="where">Условие выборки.</param>
-        /// <param name="childSelector">Условие выборки свойства.</param>
-        /// <returns>Возврвщает искомый элемент.</returns>
-        public T Get<TProperty>(Expression<Func<T, bool>> where, Expression<Func<T, TProperty>>[] childSelector)
-        {
-            return Set.FirstOrDefault(where);
-        }
-
-        /// <summary>
-        /// Получить элемент.
-        /// </summary>
-        /// <typeparam name="TProperty">Свойство элемента.</typeparam>
-        /// <param name="id">Уникальный идентификатор элемента.</param>
-        /// <param name="childSelector">Условие выборки свойства.</param>
-        /// <returns>Искомый элемент.</returns>
-        public T Get<TProperty>(int id, Expression<Func<T, TProperty>>[] childSelector)
-        {
-            var temp = Set.AsQueryable();
-
-            for (var i = 0; i < childSelector.Length; i++)
-            {
-                temp = Set.Include(childSelector[i]);
-            }
-
-            return temp.FirstOrDefault(c => c.Id == id);
-        }
-
-        /// <summary>
         /// Получить все элементы.
         /// </summary>
         /// <returns>Набор элементов.</returns>
@@ -127,25 +96,6 @@ namespace WcfTestApp.DAL.DataAccess
         public T[] GetAll(Expression<Func<T, bool>> where)
         {
             return Set.Where(c => c.Id > 0).Where(where).ToArray();
-        }
-
-        /// <summary>
-        /// Получить набор элементов.
-        /// </summary>
-        /// <typeparam name="TProperty">Свойство элемента.</typeparam>
-        /// <param name="where">Условие выборки.</param>
-        /// <param name="include">Условие включения свойства.</param>
-        /// <returns>Набор элементов.</returns>
-        public T[] GetAll<TProperty>(Expression<Func<T, bool>> where, Expression<Func<T, TProperty>>[] include)
-        {
-            var temp = Set.Where(c => c.Id > 0);
-
-            for (var i = 0; i < include.Length; i++)
-            {
-                temp = temp.Include(include[i]);
-            }
-
-            return temp.Where(where).ToArray();
         }
 
         /// <summary>

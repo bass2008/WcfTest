@@ -84,6 +84,10 @@
       <Project>{7e05f9a2-f128-4b64-bb3e-e3a668d7afce}</Project>
       <Name>WcfTestApp.Domain</Name>
     </ProjectReference>
+    <ProjectReference Include="..\WcfTestApp.WcfContracts\WcfTestApp.WcfContracts.csproj">
+      <Project>{d0c07c39-c6bd-48e8-9d01-75fb2fd3fe46}</Project>
+      <Name>WcfTestApp.WcfContracts</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
