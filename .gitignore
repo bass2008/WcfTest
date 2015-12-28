@@ -1,0 +1,12 @@
+/packages
+
+/WcfTestApp/bin
+/WcfTestApp/obj
+/WcfTestApp.DAL/bin
+/WcfTestApp.DAL/obj
+/WcfTestApp.DAL.Tests/bin
+/WcfTestApp.DAL.Tests/obj
+/WcfTestApp.Domain/bin
+/WcfTestApp.Domain/obj
+/WcfTestApp.WcfService/bin
+/WcfTestApp.WcfService/obj
