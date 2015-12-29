@@ -64,13 +64,13 @@ namespace WcfTestApp.WcfService
                 foreach (var chan in channels)
                 {
                     // Можно что-нибудь придумать, чтобы название каналов задавались в одном месте.
-                    switch (chan.Name)
+                    switch (chan.Code)
                     {
-                        case "E-mail":
+                        case EnumChannel.Email:
                             var emailSender = new EmailSender(StringResources.EmailSenderServer, StringResources.EmailSenderLogin, StringResources.EmailSenderPass);
                             emailSender.Send(user.Email, message);
                             break;
-                        case "SMS":
+                        case EnumChannel.Sms:
                             var smsSender = new SmsSender(StringResources.SmsLogerPath);
                             smsSender.Send(user.Name, message);
                             break;

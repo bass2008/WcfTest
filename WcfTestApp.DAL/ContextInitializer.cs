@@ -1,5 +1,6 @@
 ﻿using System.Data.Entity;
 using WcfTestApp.Domain.Models;
+using WcfTestApp.WcfContracts;
 
 namespace WcfTestApp.DAL
 {
@@ -14,8 +15,8 @@ namespace WcfTestApp.DAL
             var event2 = new Event { Name = "csharp" };
             var event3 = new Event { Name = "all" };
 
-            var channel1 = new Channel { Name = "E-mail" };
-            var channel2 = new Channel { Name = "SMS" };
+            var channel1 = new Channel { Name = "E-mail", Code = EnumChannel.Email };
+            var channel2 = new Channel { Name = "SMS", Code = EnumChannel.Sms };
 
             var importance1 = new Importance { Name = "Low" };
             var importance2 = new Importance { Name = "Middle" };

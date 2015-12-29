@@ -2,8 +2,6 @@
 using System.ServiceModel;
 using System.ServiceModel.Description;
 using System.Windows.Forms;
-using WcfTestApp.DAL;
-using WcfTestApp.Domain.Interfaces;
 using WcfTestApp.WcfContracts;
 
 namespace WcfTestApp.WinForms
@@ -41,8 +39,6 @@ namespace WcfTestApp.WinForms
                 var s = channel.ThrowNotice("Low", "php", "fatal error");
                 richTextBox.AppendText(string.Format("   Output: {0}", s));
             }
-
-            richTextBox.AppendText("Done!");
         }
     }
 }
