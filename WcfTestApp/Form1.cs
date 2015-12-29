@@ -13,7 +13,7 @@ namespace WcfTestApp.WinForms
         /// <summary>
         /// Логер для формы.
         /// </summary>
-        private ILogger _loger;
+        private RichTextBox richTextBox;
 
         /// <summary>
         /// Конструктор по умолчанию.
@@ -21,7 +21,7 @@ namespace WcfTestApp.WinForms
         public Form1()
         {
             InitializeComponent();
-            _loger = new Loger(richTextBox1);
+            richTextBox = richTextBox1;
         }
 
         /// <summary>
@@ -31,22 +31,18 @@ namespace WcfTestApp.WinForms
         /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
-            var helper = new Helper(_loger);
-            //helper.Start();
-            //helper.StartRepository();
-
             using (var cf = new ChannelFactory<IService>(new WebHttpBinding(), "http://localhost:8000"))
             {
                 cf.Endpoint.Behaviors.Add(new WebHttpBehavior());
 
                 var channel = cf.CreateChannel();
 
-                _loger.Write("Calling EchoWithGet via HTTP GET: ");
+                richTextBox.AppendText("Calling EchoWithGet via HTTP GET: ");
                 var s = channel.ThrowNotice("Low", "php", "fatal error");
-                _loger.Write(string.Format("   Output: {0}", s));
+                richTextBox.AppendText(string.Format("   Output: {0}", s));
             }
 
-            _loger.Write("Done!");
+            richTextBox.AppendText("Done!");
         }
     }
 }

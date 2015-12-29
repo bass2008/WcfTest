@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data.Entity;
+using NLog;
 using WcfTestApp.Domain.DataAccess;
 
 namespace WcfTestApp.DAL.DataAccess
@@ -34,9 +35,8 @@ namespace WcfTestApp.DAL.DataAccess
             }
             catch (Exception ex)
             {
-                // Запись в лог.
-                var loger = new FileLogger(DevStrings.FileLogerPath);
-                loger.Write(ex.Message);
+                var logger = LogManager.GetCurrentClassLogger();
+                logger.Error(ex.Message);
                 throw ex;
             }
 

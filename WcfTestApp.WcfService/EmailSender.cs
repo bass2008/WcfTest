@@ -2,6 +2,7 @@
 using System.Net;
 using System.Net.Mail;
 using System.Security.Cryptography.X509Certificates;
+using NLog;
 using WcfTestApp.DAL;
 using WcfTestApp.Domain.Interfaces;
 
@@ -50,23 +51,30 @@ namespace WcfTestApp.WcfService
             try
             {
                 var caption = StringResources.EmailSenderMailTheme;
-                MailMessage mail = new MailMessage();
-                mail.From = new MailAddress(_login);
+                var mail = new MailMessage
+                {
+                    From = new MailAddress(_login),
+                    Subject = caption,
+                    Body = message
+                };
                 mail.To.Add(new MailAddress(mailto));
-                mail.Subject = caption;
-                mail.Body = message;
-                SmtpClient client = new SmtpClient();
-                client.Host = _smtpServer;
-                client.Port = 587;
-                client.EnableSsl = true;
-                client.Credentials = new NetworkCredential(_login.Split('@')[0], _pass);
-                client.DeliveryMethod = SmtpDeliveryMethod.Network;
+                var client = new SmtpClient
+                {
+                    Host = _smtpServer,
+                    Port = 587,
+                    EnableSsl = true,
+                    Credentials = new NetworkCredential(_login.Split('@')[0], _pass),
+                    DeliveryMethod = SmtpDeliveryMethod.Network
+                };
                 client.Send(mail);
                 mail.Dispose();
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                throw new Exception("Mail.Send: " + e.Message);
+                var logger = LogManager.GetCurrentClassLogger();
+                var newException = new Exception("Mail was not send", ex);
+                logger.Error("Mail was not send" + ex.Message);
+                throw newException;
             }
         }
     }

@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Linq;
+using NLog;
 using WcfTestApp.DAL;
 using WcfTestApp.DAL.DataAccess;
 using WcfTestApp.Domain.Interfaces;
@@ -23,7 +25,7 @@ namespace WcfTestApp.WcfService
         /// </summary>
         public Service()
         {
-            _loger = new FileLogger(StringResources.FileLogerPath);
+            _loger = LogManager.GetCurrentClassLogger();
         }
 
         /// <summary>
@@ -41,7 +43,7 @@ namespace WcfTestApp.WcfService
             if (dbEvent == null)
             {
                 var s = string.Format("Событие {0} не найдено", eventName);
-                _loger.Write(s);
+                _loger.Error(s);
                 return s;
             }
 
@@ -50,7 +52,7 @@ namespace WcfTestApp.WcfService
             if (dbImportance == null)
             {
                 var s = string.Format("Степень важности {0} не найдена", eventName);
-                _loger.Write(s);
+                _loger.Error(s);
                 return s;
             }
             var channels = dbImportance.Channels.ToArray();

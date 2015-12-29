@@ -6,9 +6,7 @@ namespace WcfTestApp.Domain.DataAccess
     /// <summary>
     /// Интерфейс доступа к объектам БД.
     /// </summary>
-    /// <typeparam name="T">
-    /// Объект домена.
-    /// </typeparam>
+    /// <typeparam name="T">Объект домена.</typeparam>
     public interface IRepository<T> : IDisposable
     {
         /// <summary>

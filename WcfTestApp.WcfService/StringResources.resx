@@ -118,19 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="EmailSenderLogin" xml:space="preserve">
-    <value>yourLogin@mail.ru</value>
+    <value>TestMailWcfApp@mail.ru</value>
   </data>
   <data name="EmailSenderMailTheme" xml:space="preserve">
     <value>ATTENTION</value>
   </data>
   <data name="EmailSenderPass" xml:space="preserve">
-    <value>yourPass</value>
+    <value>TestDevelop123</value>
   </data>
   <data name="EmailSenderServer" xml:space="preserve">
     <value>smtp.mail.ru</value>
-  </data>
-  <data name="FileLogerPath" xml:space="preserve">
-    <value>C:\log.txt</value>
   </data>
   <data name="SmsLogerPath" xml:space="preserve">
     <value>C:\smsLoger.txt</value>
