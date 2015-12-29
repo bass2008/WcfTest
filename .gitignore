@@ -12,3 +12,5 @@
 /WcfTestApp.WcfService/obj
 /WcfTestApp.WcfContracts/bin
 /WcfTestApp.WcfContracts/obj
+/WcfTestApp.WcfServiceHost/bin
+/WcfTestApp.WcfServiceHost/obj

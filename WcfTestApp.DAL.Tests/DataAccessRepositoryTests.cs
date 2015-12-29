@@ -32,6 +32,26 @@ namespace WcfTestApp.DAL.Tests
         }
 
         [TestMethod]
+        public void Add_EventData_SaveChanges()
+        {
+            // Arrange
+            var eventName = "event1";
+            var eventModel = new Event { Name = eventName};
+            var context = new ServiceContext();
+            var unitOfWork = new UnitOfWork(context);
+            var userRepository = new EntityWithNameRepository<Event>(context);
+
+            // Act
+            userRepository.Add(eventModel);
+            unitOfWork.SaveChanges();
+
+            // Assert
+            var newEvent = userRepository.GetByName(eventName);
+            Assert.IsTrue(newEvent != null);
+            Assert.IsTrue(newEvent.Name == eventModel.Name);
+        }
+
+        [TestMethod]
         public void Add_UserData_SaveChanges()
         {
             // Arrange

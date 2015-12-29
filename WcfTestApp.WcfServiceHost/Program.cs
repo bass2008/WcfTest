@@ -1,10 +1,10 @@
 ﻿using System;
 using System.ServiceModel;
 using System.ServiceModel.Web;
-using WcfTestApp.Domain.Interfaces;
 using WcfTestApp.WcfContracts;
+using WcfTestApp.WcfService;
 
-namespace WcfTestApp.WcfService
+namespace WcfTestApp.WcfServiceHost
 {
     class Program
     {
@@ -12,8 +12,8 @@ namespace WcfTestApp.WcfService
         {
             try
             {
-                var host = new WebServiceHost(typeof (Service), new Uri("http://localhost:8000/"));
-                var ep = host.AddServiceEndpoint(typeof (IService), new WebHttpBinding(), "");
+                var host = new WebServiceHost(typeof(Service), new Uri("http://localhost:8000/"));
+                var ep = host.AddServiceEndpoint(typeof(IService), new WebHttpBinding(), "");
                 host.Open();
                 Console.WriteLine("Сервис запущен!");
                 Console.WriteLine("Нажмите любую клавишу для выхода...");
