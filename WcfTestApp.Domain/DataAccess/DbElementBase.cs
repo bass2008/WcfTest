@@ -3,7 +3,7 @@
     /// <summary>
     /// Базовый тип для элементов БД.
     /// </summary>
-    public class DbElementBase
+    public abstract class DbElementBase
     {
         /// <summary>
         /// Уникальный идентификатор элемента.

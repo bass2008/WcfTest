@@ -38,8 +38,8 @@ namespace WcfTestApp.WcfService
         public string ThrowNotice(string importance, string eventName, string message)
         {
             var context = new ServiceContext();
-            var eventRepository = new GenericRepository<Event>(context);
-            var dbEvent = eventRepository.Get(x => x.Name == eventName);
+            var eventRepository = new EntityWithNameRepository<Event>(context);
+            var dbEvent = eventRepository.GetByName(eventName);
             if (dbEvent == null)
             {
                 var s = string.Format("Событие {0} не найдено", eventName);
@@ -47,8 +47,8 @@ namespace WcfTestApp.WcfService
                 return s;
             }
 
-            var importanceRepository = new GenericRepository<Importance>(context);
-            var dbImportance = importanceRepository.Get(x => x.Name == importance);
+            var importanceRepository = new EntityWithNameRepository<Importance>(context);
+            var dbImportance = importanceRepository.GetByName(importance);
             if (dbImportance == null)
             {
                 var s = string.Format("Степень важности {0} не найдена", eventName);

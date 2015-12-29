@@ -6,7 +6,7 @@ namespace WcfTestApp.Domain.Models
     /// <summary>
     /// Пользователь.
     /// </summary>
-    public class User : DbElementBase
+    public class User : EntityWithName
     {
         /// <summary>
         /// Конструктор по умолчанию.
@@ -15,11 +15,6 @@ namespace WcfTestApp.Domain.Models
         {
             Events = new List<Event>();
         }
-
-        /// <summary>
-        /// Имя пользователя.
-        /// </summary>
-        public string Name { get; set; }
 
         /// <summary>
         /// E-mail пользователя.

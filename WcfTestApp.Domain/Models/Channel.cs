@@ -7,7 +7,7 @@ namespace WcfTestApp.Domain.Models
     /// <summary>
     /// Канал связи.
     /// </summary>
-    public class Channel : DbElementBase
+    public class Channel : EntityWithName
     {
         /// <summary>
         /// Конструктор по умолчанию.
@@ -16,11 +16,6 @@ namespace WcfTestApp.Domain.Models
         {
             Importances = new List<Importance>();
         }
-
-        /// <summary>
-        /// Имя канала.
-        /// </summary>
-        public string Name { get; set; }
 
         /// <summary>
         /// Код канала.

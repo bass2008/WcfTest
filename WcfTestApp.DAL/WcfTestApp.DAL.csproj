@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ContextInitializer.cs" />
+    <Compile Include="DataAccess\EntityWithNameRepository.cs" />
     <Compile Include="DataAccess\GenericRepository.cs" />
     <Compile Include="DataAccess\UnitOfWork.cs" />
     <Compile Include="DevStrings.Designer.cs">

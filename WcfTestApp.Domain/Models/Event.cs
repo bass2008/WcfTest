@@ -6,13 +6,8 @@ namespace WcfTestApp.Domain.Models
     /// <summary>
     /// Событие.
     /// </summary>
-    public class Event : DbElementBase
+    public class Event : EntityWithName
     {
-        /// <summary>
-        /// Имя события.
-        /// </summary>
-        public string Name { get; set; }
-
         /// <summary>
         /// Подписки на события текущего пользователя.
         /// </summary>

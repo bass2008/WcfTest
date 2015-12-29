@@ -35,6 +35,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccess\DbElementBase.cs" />
+    <Compile Include="DataAccess\EntityWithName.cs" />
     <Compile Include="DataAccess\IRepository.cs" />
     <Compile Include="DataAccess\IUnitOfWork.cs" />
     <Compile Include="Interfaces\ISender.cs" />

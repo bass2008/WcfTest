@@ -6,7 +6,7 @@ namespace WcfTestApp.Domain.Models
     /// <summary>
     /// Категория важности.
     /// </summary>
-    public class Importance : DbElementBase
+    public class Importance : EntityWithName
     {
         /// <summary>
         /// Конструктор по умолчанию.
@@ -15,11 +15,6 @@ namespace WcfTestApp.Domain.Models
         {
             Channels = new List<Channel>();
         }
-
-        /// <summary>
-        /// Имя категории важности.
-        /// </summary>
-        public string Name { get; set; }
 
         /// <summary>
         /// События с данной категорией.

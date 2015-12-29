@@ -23,7 +23,7 @@ namespace WcfTestApp.DAL.Tests
         /// <summary>
         /// Инициализировать репозиторий значениями.
         /// </summary>
-        public void InitUserRepository(GenericRepository<User> repository)
+        public void InitUserRepository(EntityWithNameRepository<User> repository)
         {
             var user1 = new User { Name = "User1", Email = "f@f.ru"};
             var user2 = new User { Name = "User2", Email = "y@f.ru" };
@@ -40,14 +40,14 @@ namespace WcfTestApp.DAL.Tests
             var user = new User { Name = userName, Email = email };
             var context = new ServiceContext();
             var unitOfWork = new UnitOfWork(context);
-            var userRepository = new GenericRepository<User>(context);
+            var userRepository = new EntityWithNameRepository<User>(context);
 
             // Act
             userRepository.Add(user);
             unitOfWork.SaveChanges();
 
             // Assert
-            var newUser = userRepository.Get(x => x.Name == userName);
+            var newUser = userRepository.GetByName(userName);
             Assert.IsTrue(newUser != null);
             Assert.IsTrue(newUser.Name == user.Name);
             Assert.IsTrue(newUser.Email == user.Email);
@@ -59,7 +59,7 @@ namespace WcfTestApp.DAL.Tests
             // Arrange
             var context = new ServiceContext();
             var unitOfWork = new UnitOfWork(context);
-            var userRepository = new GenericRepository<User>(context);
+            var userRepository = new EntityWithNameRepository<User>(context);
             InitUserRepository(userRepository);
             unitOfWork.SaveChanges();
 
@@ -81,7 +81,7 @@ namespace WcfTestApp.DAL.Tests
             var email = "fff@f.ru";
             var context = new ServiceContext();
             var unitOfWork = new UnitOfWork(context);
-            var userRepository = new GenericRepository<User>(context);
+            var userRepository = new EntityWithNameRepository<User>(context);
             InitUserRepository(userRepository);
             unitOfWork.SaveChanges();
 
